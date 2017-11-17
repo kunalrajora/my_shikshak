@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name='target' content='all'>
+    <meta name='HandheldFriendly' content='True'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home Tutors | Home Tuition jobs | Myshikshak</title>
+
+    <link rel="shortcut icon" href="images/myshikshak-fevicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel='dns-prefetch' href='//ajax.googleapis.com' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/modernizr-2.5.3-min.js"></script>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js?ver=4.7.6'></script>
+
+    <script type="text/javascript">
+
+      // Eliminate FOUC
+      document.documentElement.className = 'js';
+
+      </script>
+
+      <script type='text/javascript'>
+
+  	  /* <![CDATA[ */
+  	  var _wpcf7 = {"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};
+  	  /* ]]> */
+  	</script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+    <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script> 
+    <script src="js/script.js"></script>
+
+    <script type="text/javascript">
+    //If browser is IE8 or older we show IE specific page
+    if(ie < 9){
+      ieMessage();
+    }
+
+    /*
+    * Call functions when dom is ready
+    */
+    $(document).ready(function() {
+
+      // Hide browser top bar in mobiles
+      $('body').scrollTop(1);
+
+      // Toggle Navigation for mobile devices
+      $('.icon-nav').on('click', function(){
+        $('header nav').slideToggle();
+        $(this).toggleClass('active');
+      });
+
+      // Function to scroll to top
+      $('a[href=#top]').click(function(){
+
+            $('html, body').animate({scrollTop:0}, 1000, 'easeInOutQuad');
+            return false;
+        });
+
+      // Function to fade in image sprites
+        $('.sprite').fadeSprite();
+
+        //Function for thumbnail hover effect
+        $('.thumbs li').hoverThumb();
+
+      // Function to animate when leaving page
+      $('.transition, #nav a, #nav-footer a, #thumbs a, #next a, #prev a, #logo, #face a').leavePage(); 
+
+      // Animate the header on first      
+      $('#header').stop().animate({'opacity': '1', 'top':'0'}, 1000);
+
+      // Preload the page with jPreLoader
+      $('body').jpreLoader({
+
+        showSplash: true
+
+      }, function() { 
+
+        //Show the page once images are loaded  
+            
+          $('#face').animateHome();
+          $('#face').resizeFace();
+          
+      });
+
+    });
+
+    </script>
+
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+	<div class="jumbotron">
+  
+              <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>                        
+                    </button>
+
+                          <ul>
+                                <li class="social_links"> <a href="https://www.facebook.com/myshikshak/" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li class="social_links"> <a href="https://twitter.com/myshikshak1" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li class="social_links"> <a href="https://www.linkedin.com/company/myshikshak" rel="nofollow" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li class="social_links"> <a href="https://plus.google.com/myshikshak" rel="nofollow" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li class="social_links"> <a href="https://www.youtube.com/channel/zxxc" rel="nofollow" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                          </ul>
+                  </div>
+              </div>
+ 
+</div>
+
+<nav class="navbar navbar-default">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <!--<a class="navbar-brand" href="#">Myshikshak Logo</a>-->
+              <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="myshikshak_logo"></a>
+            </div>
+
+          <div class="collapse navbar-collapse" id="myNavbar">
+
+            <ul class="nav navbar-nav navbar-right nav-pills">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+
+          </div>
+        </div>
+</nav>
+
+
+  <!--Cutomer Option Content -->
+  <div id="content" class="content clearfix home">
+
+    <section id="section" class="light">
+
+      <div class="row">
+
+        <div class="col-12">
+          
+          <div id="face" class="face">
+
+            <a href="tutor/tutor.html">
+              <div id="designer" class="designer">
+                <div id="designer-desc" class="description">
+                  <h1>Be A Tutor</h1>
+                  <p>Become a tutor at India's fastest growing Home Tuition platform | register as a tutor now.</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="student.html">
+              <div id="coder" class="coder">
+                <div id="coder-desc" class="description">
+                  <h1>Need A Tutor</h1>
+                  <p>One-to-one interaction and learning now made easy with the Best Tutors at your doorstep.</p>
+                </div>
+              </div>
+            </a>
+
+            <img id="face-img" class="face-img" src="images/tutor-student.jpg" alt="Myshikshak Mascot">
+
+            <div id="designer-img" class="designer-img"></div>
+            <div id="coder-img" class="coder-img"></div>
+            <div id="designer-bg" class="designer-bg"></div>
+            <div id="coder-bg" class="coder-bg"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+  </div>
+  <!--Cutomer Option Content Ends -->
+
+    <!-- Student H-I-T Intro Content -->
+    <div class="container">
+
+      	<h2 class="text-center">Finding And Being A Tutor Is No More A Tension</h2>
+      	<br>
+        
+        <div class="row">
+              <div class="col-lg-6">
+               <img src="images/team.jpg" class="img-responsive" alt="Students Action Steps" width="500" height="300">
+              </div>
+              <div class="col-lg-6">
+                <div class="container">
+                  <div class="row">
+                    <h2>Searching and Managing tuition <br>for learners is easy now</h2>
+                    <br>
+                    <br>
+                      <div class="col-lg-3">
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i> CTA Steps</span>
+                        <br>
+                        <br>
+                         <span><i class="fa fa-map-marker" aria-hidden="true"></i> CTA Steps</span>
+                        <br>
+                        <br>
+                         <span><i class="fa fa-map-marker" aria-hidden="true"></i> CTA Steps</span>
+                        <br>
+                        <br>
+                         <span><i class="fa fa-map-marker" aria-hidden="true"></i> CTA Steps</span>
+                        <br>
+                        <br>
+                      </div>
+                      <div class="col-lg-3">
+                          <span><i class="fa fa-map-marker" aria-hidden="true"></i> CTA Steps</span>
+                        <br>
+                        <br>
+                         <span><i class="fa fa-map-marker" aria-hidden="true"></i> CTA Steps</span>
+                        <br>
+                        <br>
+                         <span><i class="fa fa-map-marker" aria-hidden="true"></i> CTA Steps</span>
+                        <br>
+                        <br>
+                         <span><i class="fa fa-map-marker" aria-hidden="true"></i> CTA Steps</span>
+                        <br>
+                        <br>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <!-- Student H-I-T Intro Content Ends -->
+
+    <hr>
+
+
+    <!-- Tutor H-I-T Intro Content -->
+    <div class="container">
+        <div class="row">
+              <div class="col-lg-6">
+                <div class="container">
+                  <div class="row">
+                    <h2>Getting and Managing <br> Home tuition jobs are easy now</h2>
+                    <br>
+                    <br>
+                      <div class="col-lg-3">
+                         <span><i class="fa fa-map-marker" aria-hidden="true"></i> CTA Steps</span>
+                        <br>
+                        <br>
+                         <span><i class="fa fa-map-marker" aria-hidden="true"></i> CTA Steps</span>
+                        <br>
+                        <br>
+                         <span><i class="fa fa-map-marker" aria-hidden="true"></i> CTA Steps</span>
+                        <br>
+                        <br>
+                         <span><i class="fa fa-map-marker" aria-hidden="true"></i> CTA Steps</span>
+                        <br>
+                        <br>
+                      </div>
+                      <div class="col-lg-3">
+                           <span><i class="fa fa-map-marker" aria-hidden="true"></i> CTA Steps</span>
+                        <br>
+                        <br>
+                         <span><i class="fa fa-map-marker" aria-hidden="true"></i> CTA Steps</span>
+                        <br>
+                        <br>
+                         <span><i class="fa fa-map-marker" aria-hidden="true"></i> CTA Steps</span>
+                        <br>
+                        <br>
+                         <span><i class="fa fa-map-marker" aria-hidden="true"></i> CTA Steps</span>
+                        <br>
+                      </div>
+                  </div>
+                </div>
+              </div>  
+                <div class="col-lg-6">
+                 <img src="images/team.jpg" class="img-responsive" alt="Tutors Action Steps" width="500" height="300">
+                </div>
+        </div>
+    </div>
+    <!-- Tutor H-I-T Intro Content Ends -->
+
+    <hr>
+
+
+<div class="container text-center">  
+		<h2>Home Tutors For Everything In Your Mind</h2>
+		<br>  
+  <div class="row">
+
+    <div class="col-sm-4">
+    	<a href="#">
+		    <div class="shadow">
+		      <div class="panel panel-primary">
+		        <div class="panel-heading"><b>SCHOOL ACADEMICS TUITIONS</b></div>
+		        <div class="panel-body"><img src="images/school1.png" class="img-responsive" style="width:100%" alt="Image"></div>
+		        <div class="panel-footer">Get Home Tutors of all the Boards, Classes and Subjects from KG to 12th.</div>
+		      </div>
+		    </div>
+	    </a>
+    </div>
+
+    <div class="col-sm-4">
+    	<a href="#">
+		    <div class="shadow"> 
+		      <div class="panel panel-info">
+		        <div class="panel-heading"><b>HOBBY TUITIONS</b></div>
+		        <div class="panel-body"><img src="images/hobby1.png" class="img-responsive" style="width:100%" alt="Image"></div>
+		        <div class="panel-footer">Get private tutors of mostly all the hobby classes so learn at your home.</div>
+		      </div>
+		  	</div>
+	  	</a>
+    </div>
+
+    <div class="col-sm-4"> 
+    	<a href="#">
+	    	<div class="shadow">
+		      <div class="panel panel-success">
+		        <div class="panel-heading"><b>COMPATATIVE EXAM TUITIONS</b></div>
+		        <div class="panel-body"><img src="images/comp1.png" class="img-responsive" style="width:100%" alt="Image"></div>
+		        <div class="panel-footer">Get Home Tutors for mostly all the compatition exams for one to one learning.</div>
+		      </div>
+	  		</div>
+  		</a>
+    </div>
+  </div>
+</div>
+
+<hr>
+	
+	<div class="container text-center">
+		<h2>Why Myshikshak Is The Fastest Growning Platform And best For You</h2>
+		<br>
+
+		<div class="row">
+
+			<div class="col-sm-4">
+				<h3>Myshikshak CTA for Teachers 1</h3>
+				<h3>Myshikshak CTA for Teachers 2</h3>
+				<h3>Myshikshak CTA for Teachers 3</h3>
+		    </div>
+
+		    <div class="col-sm-4"> 
+
+		    	<img src="images/sealOfTrust.png" class="img-responsive" style="width:100%" alt="Image">
+		    	<p><b>Myshikshak CTA for Seal of trust 1</b></p>
+		    	<p><b>Myshikshak CTA for Seal of trust 2</b></p>
+		    	<p><b>Myshikshak CTA for Seal of trust 3</b></p>
+		          
+		    </div>
+
+		    <div class="col-sm-4"> 
+		    	<h3>Myshikshak CTA for Learners 1</h3>
+		    	<h3>Myshikshak CTA for Learners 2</h3>
+		    	<h3>Myshikshak CTA for Learners 3</h3>   
+		    </div>
+
+		</div>
+	</div>
+<hr>
+
+<div class="container">
+	<h2 class="text-center">What People Say About Myshikshak</h2>
+  	<br>
+		<div class="row">
+
+                    <div class="col-md-12" data-wow-delay="0.2s">
+                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                            <!-- Bottom Carousel Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="images/abhy.jpg" alt="">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="images/abhy.jpg" alt="">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="images/abhy.jpg" alt="">
+                                </li>
+                            </ol>
+
+                            <!-- Carousel Slides / Quotes -->
+                            <div class="carousel-inner text-center">
+
+                                <!-- Quote 1 -->
+                                <div class="item active">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !</p>
+                                                <small>Someone famous</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 2 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                                                <small>Someone famous</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                                <!-- Quote 3 -->
+                                <div class="item">
+                                    <blockquote>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. .</p>
+                                                <small>Someone famous</small>
+                                            </div>
+                                        </div>
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                            <!-- Carousel Buttons Next/Prev -->
+                            <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                            <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+</div>
+
+<hr>
+
+<div class="container">    
+            <div class="row">
+
+              <h2 class="text-center">Search Home Tuitions</h2>
+
+                <div class="col-sm-3">
+                  <div>
+
+                    <a href="/home-tuition/academics">Academics Home Tuition</a>
+                    <br>
+                    <a href="/home-tuition/art-and-craft">Art Teacher</a>
+                    <br>
+                    <a href="/home-tuition/competitive-exams">Competitive Exams Tuition</a>
+                    <br>
+                    <a href="/home-tuition/computer-programming">Computer Tuition</a>
+                    <br>
+                    <a href="/home-tuition/dance">Dance Teacher</a>
+                    <br>
+                    <a href="/home-tuition/fitness">Fitness Teacher</a>
+
+                  </div>
+                </div> 
+
+                <div class="col-sm-3"> 
+                  <div>
+
+                    <a href="/home-tuition/academics">Academics Home Tuition</a>
+                    <br>
+                    <a href="/home-tuition/art-and-craft">Art Teacher</a>
+                    <br>
+                    <a href="/home-tuition/competitive-exams">Competitive Exams Tuition</a>
+                    <br>
+                    <a href="/home-tuition/computer-programming">Computer Tuition</a>
+                    <br>
+                    <a href="/home-tuition/dance">Dance Teacher</a>
+                    <br>
+                    <a href="/home-tuition/fitness">Fitness Teacher</a>
+
+                  </div>
+                  
+                </div>
+
+                <div class="col-sm-3">
+                   <div>
+
+                    <a href="/home-tuition/academics">Academics Home Tuition</a>
+                    <br>
+                    <a href="/home-tuition/art-and-craft">Art Teacher</a>
+                    <br>
+                    <a href="/home-tuition/competitive-exams">Competitive Exams Tuition</a>
+                    <br>
+                    <a href="/home-tuition/computer-programming">Computer Tuition</a>
+                    <br>
+                    <a href="/home-tuition/dance">Dance Teacher</a>
+                    <br>
+                    <a href="/home-tuition/fitness">Fitness Teacher</a>
+
+                  </div>
+                      
+                </div>
+
+                <div class="col-sm-3"> 
+                   <div>
+
+                    <a href="/home-tuition/academics">Academics Home Tuition</a>
+                    <br>
+                    <a href="/home-tuition/art-and-craft">Art Teacher</a>
+                    <br>
+                    <a href="/home-tuition/competitive-exams">Competitive Exams Tuition</a>
+                    <br>
+                    <a href="/home-tuition/computer-programming">Computer Tuition</a>
+                    <br>
+                    <a href="/home-tuition/dance">Dance Teacher</a>
+                    <br>
+                    <a href="/home-tuition/fitness">Fitness Teacher</a>
+
+                  </div>
+                  
+                </div>
+
+            </div>
+          </div>
+
+          <hr>
+
+  <div class="container">    
+            <div class="row">
+
+              <div class="col-sm-2">
+              <h5>Home Tuitions by City </h5>
+              </div>
+
+              <div class="col-sm-10 col-xs-12">
+                <div class="">
+                <a href="/home-tuition/meerut/">Meerut</a>
+                <a href="/home-tuition/lucknow/">Lucknow</a>
+                <a href="/home-tuition/dehradun/">Dehradun</a>
+                <a href="/home-tuition/delhi/">Delhi</a>
+                <a href="/home-tuition/noida/">Noida</a>
+                <a href="/home-tuition/gaziabad/">Gaziabad</a>
+                <a href="/home-tuition/gurugram/">Gurugram</a>
+                <a href="/home-tuition/chandigarh/">Chandigarh</a>
+                <a href="/home-tuition/bangalore/">Bangalore</a>
+                <a href="/home-tuition/pune/">Pune</a>
+                </div>
+              </div>
+
+            </div>
+  </div>
+
+  <footer class="container-fluid text-center">
+
+    <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+
+    <br>
+    <br>
+
+    			<ul class="list-inline">
+                   <li> <a href="https://www.facebook.com/myshikshak/" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                   <li> <a href="https://twitter.com/myshikshak1" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                   <li> <a href="https://www.linkedin.com/company/myshikshak" rel="nofollow" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                   <li> <a href="https://plus.google.com/myshikshak" rel="nofollow" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                   <li> <a href="https://www.youtube.com/channel/zxxc" rel="nofollow" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                </ul>
+
+
+
+    <span>Enter your number and Email, and we’ll text you a download app link.</span>
+    <br>
+    <br>
+      <form class="form-inline">
+        <input type="number" class="form-control" size="50" placeholder="Mobile Number">
+        <input type="email" class="form-control" size="50" placeholder="Email Address">
+        <button type="button" class="btn btn-danger">Submit</button>
+        <br>
+        <br>
+        <label><input type="checkbox" checked="" name="student-app" for="For Student"> Myshikshak App</label>
+        <label><input type="checkbox" checked="" name="tutor-app" for="For Tutor"> Shikshak App</label>
+        <label><input type="checkbox" checked="" name="newsletter" for="For All"> Newsletter</label>
+      </form>
+
+      <p><a href="t-c.html">Terms & Conditions</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="about-us.html"> About Us</a> | <a href="career.html"> Career</a></p>
+
+  <p>© 2017 MICTech Business Labs Pvt. Ltd. All Rights Reserved.</p>
+
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+.title, .form-step label {
+    text-align: center;
+    font-family: Roboto;
+}
+
+form {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.form-step {
+    background-color: #FFF;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 40%;
+    margin: auto;
+    border: 5px solid #ace55d;
+    border-radius: 3px;
+    transition: transform 700ms ease-in-out;
+}
+
+.form-step label {
+    margin-bottom: 10px;
+    font-size: 20px;
+	color: #000;
+	font-weight: bold;
+}
+
+.form-step input {
+    padding: 10px 20px;
+    border: 0.5px solid grey;
+    border-radius: 3px;
+    display: block;
+    width: 60%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-step select {
+    padding: 10px 20px;
+    border: 0.5px solid grey;
+    border-radius: 3px;
+    display: inline-block;
+    width: 60%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-step input:focus {
+    border: 0.5px solid #DDD;
+}
+
+.form-step textarea {
+  border: 0.5px solid grey;
+  width: 60%;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  font-family: Roboto;
+}
+
+.is-showing {
+    display: flex;
+}
+
+.animate-out {
+    transform: translateX(2000px);
+}
+
+.animate-in {
+    transform: translateX(-2000px);
+    z-index: 0;
+    display: flex;
+}
+
+.animate-up {
+    transform: translateY(-500px);
+    display: flex;
+}
+
+.submit, .next {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    transition: all 1s;
+}
+
+.submit:hover, .next:hover {
+    border-color: orange;
+}

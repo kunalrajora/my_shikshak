@@ -1,0 +1,530 @@
+
+/* Reset =================================================== */
+html,
+body,
+body div,
+h1,
+p,
+img,
+nav,
+section,
+nav,
+section {
+  display: block;
+}
+
+h2 {
+  color: #00c3f6;
+}
+
+/* Mixins =================================================== */
+.clearfix,
+section,
+.row {
+  *zoom: 1;
+}
+.clearfix:before,
+section:before,
+.row:before,
+.clearfix:after,
+section:after,
+.row:after {
+  display: table;
+  content: "";
+}
+.clearfix:after,
+section:after,
+.row:after {
+  clear: both;
+}
+/* Effects =================================================== */
+
+
+/* Page =================================================== */
+.content {
+  margin-top: 62px;
+}
+
+h1,
+.h1 {
+  margin: 0;
+  color: #111111;
+  text-rendering: optimizelegibility;
+  font-weight: normal;
+}
+h1,
+.h1 {
+  margin-bottom: 0.1em;
+  font-size: 48px;
+  font-size: 4.8rem;
+  line-height: 1.2em;
+  font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  letter-spacing: -0.07em;
+}
+
+
+/* Font Embedding */
+@font-face {
+  font-family: 'proxima nova bold';
+  src: url('../fonts/proximanova-bold-webfont.eot');
+  src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-bold-webfont.woff') format('woff'), url('../fonts/proximanova-bold-webfont.ttf') format('truetype'), url('../fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proxima nova regular';
+  src: url('../fonts/proximanova-regular-webfont.eot');
+  src: url('../fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-regular-webfont.woff') format('woff'), url('../fonts/proximanova-regular-webfont.ttf') format('truetype'), url('../fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proxima nova light';
+  src: url('../fonts/proximanova-light-webfont.eot');
+  src: url('../fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-light-webfont.woff') format('woff'), url('../fonts/proximanova-light-webfont.ttf') format('truetype'), url('../fonts/proximanova-light-webfont.svg#proxima_nova_ltregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'neosans regular';
+  src: url('../fonts/neosans-medium-webfont.eot');
+  src: url('../fonts/neosans-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/neosans-medium-webfont.woff') format('woff'), url('../fonts/neosans-medium-webfont.ttf') format('truetype'), url('../fonts/neosans-medium-webfont.svg#neosansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Sections */
+section.light,
+section.main {
+  overflow: hidden;
+  border-top: #FFF solid 1px;
+}
+section.light {
+  -webkit-box-shadow: inset 0px 30px 30px -30px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0px 30px 30px -30px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0px 30px 30px -30px rgba(0, 0, 0, 0.05);
+  border-bottom: #dddddd solid 1px;
+}
+
+img {
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 2em;
+}
+img.major {
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+img.last {
+  margin-bottom: 3em;
+}
+img.shadow {
+  border: #DDD solid 1px;
+}
+
+/* Homepage Half Face */
+.face {
+  width: 100%;
+  position: relative;
+  /* Show default image */
+  /* Descriptions */
+  /* Inline media queries */
+}
+.face .face-img {
+  display: block;
+  margin: 0px;
+}
+.face a {
+  color: #666666;
+  text-decoration: none;
+}
+.face .coder,
+.face .designer {
+  position: absolute;
+  width: 40%;
+  display: block;
+  z-index: 10;
+  height: 15%;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+.face .coder h1,
+.face .designer h1 {
+  font-size: 22px;
+  font-size: 2.2rem;
+}
+.face .designer {
+  left: 0;
+}
+.face .coder {
+  right: 0;
+  text-align: right;
+}
+.face .designer-img,
+.face .coder-img,
+.face .designer-bg,
+.face .coder-bg,
+.face .coder p,
+.face .designer p {
+  display: none;
+}
+
+@media only screen and (min-width: 321px) {
+  .face .coder h1,
+  .face .designer h1 {
+    font-size: 26px;
+    font-size: 2.6rem;
+  }
+}
+@media only screen and (min-width: 376px) {
+  .face .coder h1,
+  .face .designer h1 {
+    font-size: 30px;
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .face .coder h1,
+  .face .designer h1 {
+    font-size: 42px;
+    font-size: 4.2rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .face .coder h1,
+  .face .designer h1 {
+    font-size: 47px;
+    font-size: 4.7rem;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .face .coder,
+  .face .designer {
+    width: 25%;
+    height: 35%;
+  }
+  .face .coder h1,
+  .face .designer h1 {
+    font-size: 45px;
+    font-size: 4.5rem;
+  }
+  .face .coder .more,
+  .face .designer .more {
+    display: none;
+  }
+  .face .coder p,
+  .face .designer p {
+    display: block;
+    font-size: 16px;
+    font-size: 1.6rem;
+    margin: 0px;
+  }
+}
+@media only screen and (min-width: 860px) {
+  .face .coder,
+  .face .designer {
+    width: 30%;
+    height: 30%;
+  }
+  .face .coder h1,
+  .face .designer h1 {
+    font-size: 58px;
+    font-size: 5.8rem;
+  }
+  .face .coder p,
+  .face .designer p {
+    font-size: 17px;
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .face .coder,
+  .face .designer {
+    height: 40%;
+  }
+  .face .coder h1,
+  .face .designer h1 {
+    font-size: 70px;
+    font-size: 7rem;
+  }
+  .face .coder .more,
+  .face .designer .more {
+    display: inline;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  .face {
+    width: 1040px;
+    height: 600px;
+    position: relative;
+    /* Face images */
+    /* Background images */
+    /* Hide default image with no effects */
+  }
+  .face .coder,
+  .face .designer {
+    width: 520px;
+    height: 600px;
+    top: 0px;
+    position: absolute;
+  }
+  .face .coder .description,
+  .face .designer .description {
+    position: absolute;
+    top: 100px;
+    width: 400px;
+  }
+  .face .coder .arrow,
+  .face .designer .arrow {
+    width: 85px;
+    height: 140px;
+    background: url(../images/myshikshak_logo.png) no-repeat;
+    display: block;
+    position: absolute;
+    top: 20px;
+  }
+  .face .coder p,
+  .face .designer p {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.4em;
+  }
+  .face .coder {
+    text-align: left;
+    right: 0px;
+  }
+  .face .coder .description {
+    right: -100px;
+  }
+  .face .coder .arrow {
+    right: 0px;
+    background-position: 0px -751px;
+  }
+  .face .designer {
+    left: 0px;
+  }
+  .face .designer .description {
+    left: -70px;
+  }
+  .face .designer .arrow {
+    left: 0px;
+    background-position: 0px -892px;
+  }
+  .face .designer-img,
+  .face .coder-img {
+    width: 420px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    background: url(../images/sprite-home.png) 0 0 no-repeat;
+    display: block;
+    z-index: 1;
+  }
+  .face .designer-img {
+    background-position: 0px -600px;
+    left: 100px;
+  }
+  .face .coder-img {
+    background-position: 100% 0px;
+    right: 100px;
+  }
+  .face .designer-bg,
+  .face .coder-bg {
+    width: 420px;
+    height: 200px;
+    position: absolute;
+    bottom: 0px;
+    background: url(../images/sprite-home.png) 0 -1300px no-repeat;
+    display: block;
+  }
+  .face .designer-bg {
+    left: 100px;
+  }
+  .face .coder-bg {
+    right: 100px;
+    background-position: 100% -1300px;
+  }
+  .face .face-img {
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: 376px) {
+  h1 {
+    font-size: 60px;
+    font-size: 6rem;
+  }
+  .content {
+    margin-top: 5px;
+  }
+  h1,
+  .h1 {
+    font-size: 70px;
+    font-size: 7rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  p {
+    line-height: 1.4em;
+  }
+  p.intro {
+    font-size: 26px;
+    font-size: 2.6rem;
+  }
+  .row {
+    clear: both;
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+}
+/* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: -6px;
+      border-radius: 0px;
+      background-color: #EDEDED;
+      font-size: 15px;
+      color: #D5D5D5;
+      min-height:100px;
+      
+    }
+
+    .navbar-right {
+    float: right!important;
+    margin-right: 45px;
+    margin-top: 10px;
+    }
+
+    .navbar-brand {
+        padding: 5px 5px 0px 50px;
+        height: 100px;
+        line-height: 100px;
+      }
+
+      .navbar-toggle {
+        /* (80px - button height 34px) / 2 = 23px */
+          margin-top: 20px;
+          padding: 25px 25px;
+      }
+
+      @media (min-width: 768px) {
+        .navbar-nav > li > a {
+          /* (80px - line-height of 27px) / 2 = 26.5px */
+          padding-top: 26.5px;
+          padding-bottom: 26.5px;
+          line-height: 27px;
+        }
+      }
+
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      background-color: #2C2C2C;
+      transition: all .2s ease-in-out;
+      -moz-transition: all .1s ease-in-out;
+      -webkit-transition: all .1s ease-in-out;
+      -o-transition: all .1s ease-in-out;
+      visibility: visible;
+      opacity: 1;
+      margin-bottom: 0;
+      z-index: 999999;
+      height: 48px;
+      padding-top: 0px;
+      font-size: 1em;
+      color: #fff;
+    }
+
+    .jumbotron a {
+      color: #fff;
+    }
+
+    .jumbotron a:hover, .jumbotron a:focus {
+      color: #FFD689;
+      background:#286dab !important;
+    }
+
+    .dropdown-menu {
+          background-color: #b95c0c;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+   .social_links {
+    float: left;
+    padding: 10px;
+    font-size: 1em;
+    display: block;
+    }
+
+  .shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+  /* Carousel */
+
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+    /* Control buttons  */
+    /* Previous button  */
+    /* Next button  */
+    /* Changes the position of the indicators */
+    /* Changes the color of the indicators */
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-control.left {
+    left: -60px;
+}
+#quote-carousel .carousel-control.right {
+    right: -60px;
+}
+#quote-carousel .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    border: 4px solid #CCC;
+    border-radius: 50px;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+#quote-carousel .carousel-indicators .active {
+    background: #333333;
+    width: 128px;
+    height: 128px;
+    border-radius: 100px;
+    border-color: #f33;
+    opacity: 1;
+    overflow: hidden;
+}
+.carousel-inner {
+    min-height: 300px;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}

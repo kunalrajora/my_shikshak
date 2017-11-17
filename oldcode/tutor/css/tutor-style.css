@@ -1,0 +1,140 @@
+h2 {
+  color: #00c3f6;
+}
+
+.bg-1 { 
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+
+.panel-primary {
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.active {
+  color: #ffffff;
+  background-color: #286dab;
+  border-color: #32fb5d;
+}
+
+ /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 15px;
+      border-radius: 0px;
+      background-color: #EDEDED;
+      font-size: 15px;
+      color: #D5D5D5;
+      min-height:100px;
+      
+    }
+
+    .navbar-right {
+    float: right!important;
+    margin-right: 45px;
+    margin-top: 10px;
+    }
+
+    .navbar-brand {
+        padding: 5px 5px 0px 50px;
+        height: 100px;
+        line-height: 100px;
+      }
+
+      .navbar-toggle {
+        /* (80px - button height 34px) / 2 = 23px */
+          margin-top: 20px;
+          padding: 25px 25px;
+      }
+
+      @media (min-width: 768px) {
+        .navbar-nav > li > a {
+          /* (80px - line-height of 27px) / 2 = 26.5px */
+          padding-top: 26.5px;
+          padding-bottom: 26.5px;
+          line-height: 27px;
+        }
+      }
+
+
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      background-color: #2C2C2C;
+      transition: all .2s ease-in-out;
+      -moz-transition: all .1s ease-in-out;
+      -webkit-transition: all .1s ease-in-out;
+      -o-transition: all .1s ease-in-out;
+      visibility: visible;
+      opacity: 1;
+      margin-bottom: 0;
+      z-index: 999999;
+      height: 48px;
+      padding-top: 0px;
+      font-size: 1em;
+      color: #fff;
+    }
+
+    .jumbotron a {
+      color: #fff;
+    }
+
+    .jumbotron a:hover, .jumbotron a:focus {
+      color: #FFD689;
+      background:#286dab !important;
+    }
+
+    .dropdown-menu {
+          background-color: #b95c0c;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+
+   .social_links {
+    float: left;
+    padding: 10px;
+    font-size: 1em;
+    display: block;
+
+    }
+
+    .next-line {
+      
+    }
+
+
+.navbar1-right {
+    float: right!important;
+    margin-right: 45px;
+    margin-top: 10px;
+}
+@media (min-width: 768px)
+.navbar1.less:385
+.navbar1-right {
+    float: right!important;
+    margin-right: -15px;
+}
+@media (min-width: 768px)
+.navbar1.less:271
+.navbar1-nav1 {
+    float: left;
+    margin: 0;
+}
+.navbar1.less:237
+.navbar1-nav1 {
+    margin: 7.5px -15px;
+}
+.navs1.less:9
+.nav1 {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
